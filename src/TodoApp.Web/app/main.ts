@@ -1,5 +1,5 @@
-﻿export class Greeter {
-    greet(name: string) {
-        return "Aloha " + name;
-    }
-};
+﻿import {Greeter} from "./Greeter";
+
+const greeter = new Greeter();
+const element = document.getElementById("greeting");
+element.innerHTML = greeter.greet("Matthew"); 
