@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "scripts": {
+    "gulp": "gulp",
+    "jspm": "jspm",
+    "start": "npm install && npm run jspm install",
+    "test": "karma start --single-run",
+    "test:w": "karma start",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.38",
+    "jasmine-core": "^2.5.2",
+    "jspm": "^0.16.48",
+    "karma": "^1.3.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jspm": "^2.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "phantomjs": "^2.1.7",
+    "typescript": "^2.0.10"
+  },
+  "dependencies": {},
+  "jspm": {
+    "directories": {
+      "baseURL": "wwwroot"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }
+}
