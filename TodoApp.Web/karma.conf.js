@@ -21,11 +21,17 @@ module.exports = function (config) {
 
         jspm: {
             config: 'config.js',
+			serveFiles: [
+				'**/*.js'
+			],
             loadFiles: [
                 '**/*.spec.js'
-            ]
-        },
-
+            ],
+		},
+		
+		proxies: {
+		  '/app/': '/base/app/'
+		},
 
         // list of files to exclude
         exclude: [
@@ -55,7 +61,7 @@ module.exports = function (config) {
 
         // level of logging
         // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-        logLevel: config.LOG_DEBUG,
+        logLevel: config.LOG_WARN,
 
 
         // enable / disable watching file and executing tests whenever any file changes
